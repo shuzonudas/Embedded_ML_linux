@@ -1,0 +1,40 @@
+
+Run the audio_utility.py and then figureout the input and output audio device
+Then update that information in config.py
+
+Create a virtual env
+|----- python -m venv .venv
+
+
+Start the virtual env:
+|
+|------Windows:
+|        .venv\Scripts\activate
+|------Linux:
+|        source .venv/bin/activate
+
+
+Export dependencies:
+|
+|----- pip freeze > requirements.txt
+
+Install dependencies:
+|
+|----- pip install -r requirements.txt
+
+On the new system:
+|
+|--- python -m venv .venv
+|--- source .venv/bin/activate   # or .venv\Scripts\activate on Windows
+|--- pip install -r requirements.txt
+
+
+File descriptions:
+|
+|----- config.py // Configuration constants! 
+|----- main.py //  Main entry point of the program!
+|----- audio_processing.py // Audio capture and feature extraction.
+|----- model_engine.py // Loads and runs ML model.
+|----- input_handler.py // Detects keypress and exits the app.
+
+

@@ -1,0 +1,17 @@
+# Chainsaw Activity Detection (CAD) Dependencies
+# Install using: pip install -r requirements.txt
+
+# Machine Learning
+tensorflow>=2.10.0
+numpy>=1.23.5
+
+# Audio Processing
+librosa>=0.10.0
+sounddevice>=0.4.6
+pandas>=1.5.0
+
+# Documentation & PDF Generation
+fpdf2>=2.7.8
+
+# Testing
+pytest>=7.0.0
